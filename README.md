@@ -1,10 +1,14 @@
 <p align="center">
+  <img src="assets/icons/beanybundle.png" width="140" alt="BeanyBundle icon">
+</p>
+
+<h1 align="center">BeanyBundle</h1>
+
+<p align="center">
   <img src="assets/icons/beanybox.png" width="90" alt="BeanyBox icon">
   <img src="assets/icons/beanydrive.png" width="90" alt="BeanyDrive icon">
   <img src="assets/icons/questmaker.png" width="90" alt="Beany's Quest Maker icon">
 </p>
-
-<h1 align="center">BeanyBundle</h1>
 
 <p align="center">
   The terminal-styled home page for all of Greenythebeany's desktop apps —

@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script>
+  document.documentElement.classList.add('js');
+  if (localStorage.getItem('beanybundle-theme') === 'light') document.documentElement.setAttribute('data-theme', 'light');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BeanyBundle</title>
+<meta name="description" content="BeanyBundle — a bundle of terminal-styled desktop apps by Greenythebeany.">
+<link rel="icon" href="assets/icons/beanybox.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="boot-overlay">
+  <div id="boot-lines"></div>
+  <div class="line">> <span class="cursor">_</span></div>
+</div>
+<div class="crt-overlay"></div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="brand">
+      <span class="chevron">&#10095;_</span>
+      <b data-i18n="nav.home">BeanyBundle</b>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+    <div class="nav-controls">
+      <div class="lang-group">
+        <button class="toggle-btn lang-btn" data-lang="en">EN</button>
+        <button class="toggle-btn lang-btn" data-lang="sk">SK</button>
+      </div>
+      <div class="theme-group">
+        <button class="toggle-btn theme-btn" data-theme="dark">DARK</button>
+        <button class="toggle-btn theme-btn" data-theme="light">LIGHT</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-prompt"><span class="chevron">&#10095;</span> <span data-i18n="hero.prompt">~/greenythebeany $ ls apps</span></div>
+    <h1>Beany<span class="accent">Bundle</span><span class="cursor">&nbsp;</span></h1>
+    <p class="hero-tagline" data-i18n="hero.tagline">A small bundle of terminal-styled desktop apps. Keyboard-driven, themeable, built with Electron — one UI language across all of them.</p>
+    <p class="hero-sub" data-i18n="hero.sub">Pick an app below to see what it does.</p>
+    <div class="typed-line"><span class="accent" data-typed="hero.typed"></span></div>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="chevron">&#10095;</span>
+      <h2 data-i18n="apps.head">apps</h2>
+      <span class="count" data-i18n="apps.count">3 shipped · more soon</span>
+    </div>
+
+    <div class="carousel-shell">
+      <div class="carousel">
+        <article class="app-card" tabindex="0" data-href="apps/beanybox.html">
+          <img class="app-card-icon" src="assets/icons/beanybox.png" alt="BeanyBox icon">
+          <div class="app-card-name">Beany<span class="accentword">Box</span></div>
+          <p class="app-card-desc" data-i18n="card.beanybox.desc">A terminal-styled Gmail client. Keyboard-driven, real HTML mail, AI draft assist.</p>
+          <div class="app-card-cta"><span>BeanyBox</span><span data-i18n="card.cta.open">open</span></div>
+        </article>
+
+        <article class="app-card" tabindex="0" data-href="apps/beanydrive.html">
+          <img class="app-card-icon" src="assets/icons/beanydrive.png" alt="BeanyDrive icon">
+          <div class="app-card-name">Beany<span class="accentword">Drive</span></div>
+          <p class="app-card-desc" data-i18n="card.beanydrive.desc">Turns a Discord channel into personal cloud storage, with folders, tags and in-app preview.</p>
+          <div class="app-card-cta"><span>BeanyDrive</span><span data-i18n="card.cta.open">open</span></div>
+        </article>
+
+        <article class="app-card" tabindex="0" data-href="apps/questmaker.html">
+          <img class="app-card-icon" src="assets/icons/questmaker.png" alt="Beany's Quest Maker icon">
+          <div class="app-card-name">Beany's Quest<span class="accentword"> Maker</span></div>
+          <p class="app-card-desc" data-i18n="card.questmaker.desc">Browses Discord's own game catalog and builds placeholder apps so Orb quests tick up.</p>
+          <div class="app-card-cta"><span>Quest Maker</span><span data-i18n="card.cta.open">open</span></div>
+        </article>
+
+        <article class="app-card soon" tabindex="-1">
+          <div class="app-card-icon" style="display:flex;align-items:center;justify-content:center;font-size:34px;color:var(--text-dimmer);border:1px dashed var(--border-soft);">?</div>
+          <div class="app-card-name" data-i18n="card.soon.name">Beany???</div>
+          <p class="app-card-desc" data-i18n="card.soon.desc">Something else is brewing. Check back later.</p>
+          <div class="app-card-cta"><span>&mdash;</span><span data-i18n="card.cta.soon">soon</span></div>
+        </article>
+      </div>
+
+      <div class="carousel-arrows">
+        <button class="arrow-btn" data-carousel-prev aria-label="previous">&#10094;</button>
+        <button class="arrow-btn" data-carousel-next aria-label="next">&#10095;</button>
+      </div>
+      <div class="carousel-dots"></div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-links">
+      <a href="https://github.com/greenythebeany" target="_blank" rel="noopener"><span class="chevron">&#10095;</span> github.com/greenythebeany</a>
+      <a href="https://github.com/greenythebeany/BeanyBundle" target="_blank" rel="noopener" data-i18n="footer.source">source</a>
+    </div>
+    <div data-i18n="footer.tagline">no telemetry. no accounts you didn't ask for. just terminals.</div>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

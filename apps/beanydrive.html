@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script>
+  document.documentElement.classList.add('js');
+  if (localStorage.getItem('beanybundle-theme') === 'light') document.documentElement.setAttribute('data-theme', 'light');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BeanyDrive — BeanyBundle</title>
+<meta name="description" content="BeanyDrive — a terminal-styled desktop client that uses Discord as personal cloud storage.">
+<link rel="icon" href="../assets/icons/beanydrive.png">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div class="crt-overlay"></div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="brand">
+      <a href="../index.html" style="display:flex;align-items:center;gap:10px;">
+        <span class="chevron">&#10095;_</span>
+        <b data-i18n="nav.home">BeanyBundle</b>
+      </a>
+    </div>
+    <div class="nav-controls">
+      <div class="lang-group">
+        <button class="toggle-btn lang-btn" data-lang="en">EN</button>
+        <button class="toggle-btn lang-btn" data-lang="sk">SK</button>
+      </div>
+      <div class="theme-group">
+        <button class="toggle-btn theme-btn" data-theme="dark">DARK</button>
+        <button class="toggle-btn theme-btn" data-theme="light">LIGHT</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap" style="padding-top:16px;">
+  <div class="crumb">
+    <span class="chevron">&#10095;</span>
+    <a href="../index.html" data-i18n="nav.back">cd ../BeanyBundle</a>
+  </div>
+</div>
+
+<header class="app-hero">
+  <div class="wrap">
+    <img class="app-hero-icon" src="../assets/icons/beanydrive.png" alt="BeanyDrive icon">
+    <h1><span data-i18n="beanydrive.name.grey">Beany</span><span class="accentword" data-i18n="beanydrive.name.accent">Drive</span></h1>
+    <p class="tagline" data-i18n="beanydrive.tagline">A terminal-styled desktop client that uses a Discord text channel as personal cloud storage.</p>
+    <div class="btn-row">
+      <a class="btn" href="https://github.com/greenythebeany/BeanyDrive/releases" target="_blank" rel="noopener" data-i18n="download.btn">download</a>
+      <a class="btn secondary" href="https://github.com/greenythebeany/BeanyDrive" target="_blank" rel="noopener" data-i18n="source.btn">view source</a>
+    </div>
+  </div>
+</header>
+
+<section class="section reveal">
+  <div class="wrap">
+    <p style="max-width:760px;margin:0 auto;text-align:center;color:var(--text-body);font-size:14px;" data-i18n="beanydrive.desc"></p>
+  </div>
+</section>
+
+<section class="section reveal">
+  <div class="wrap">
+    <div class="term-frame">
+      <div class="term-frame-bar">
+        <span><span class="chevron">&#10095;_</span> BeanyDrive</span>
+        <span class="dots"><span></span><span></span><span></span></span>
+      </div>
+      <img class="shot-dark" src="../assets/screenshots/beanydrive-dark.png" alt="BeanyDrive file list, dark theme">
+      <img class="shot-light" src="../assets/screenshots/beanydrive-light.png" alt="BeanyDrive file list, light theme">
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="chevron">&#10095;</span>
+      <h2 data-i18n="features.head">features</h2>
+    </div>
+    <ul class="feature-list">
+      <li><span class="chevron">&#9656;</span><span data-i18n-html="beanydrive.f1"></span></li>
+      <li><span class="chevron">&#9656;</span><span data-i18n-html="beanydrive.f2"></span></li>
+      <li><span class="chevron">&#9656;</span><span data-i18n-html="beanydrive.f3"></span></li>
+      <li><span class="chevron">&#9656;</span><span data-i18n-html="beanydrive.f4"></span></li>
+      <li><span class="chevron">&#9656;</span><span data-i18n-html="beanydrive.f5"></span></li>
+      <li><span class="chevron">&#9656;</span><span data-i18n-html="beanydrive.f6"></span></li>
+      <li><span class="chevron">&#9656;</span><span data-i18n-html="beanydrive.f7"></span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section reveal">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="chevron">&#10095;</span>
+      <h2 data-i18n="shortcuts.head">shortcuts</h2>
+    </div>
+    <table class="kbd-table">
+      <tr><th data-i18n="shortcuts.key">key</th><th data-i18n="shortcuts.action">action</th></tr>
+      <tr><td><kbd>j</kbd> / <kbd>k</kbd></td><td>move selection down / up</td></tr>
+      <tr><td><kbd>Enter</kbd></td><td>open selected folder</td></tr>
+      <tr><td><kbd>u</kbd></td><td>upload files</td></tr>
+      <tr><td><kbd>n</kbd></td><td>new folder</td></tr>
+      <tr><td><kbd>r</kbd></td><td>rename selected file</td></tr>
+      <tr><td><kbd>p</kbd></td><td>preview selected file</td></tr>
+      <tr><td><kbd>Space</kbd></td><td>star / unstar</td></tr>
+      <tr><td><kbd>d</kbd></td><td>move to trash</td></tr>
+      <tr><td><kbd>x</kbd></td><td>restore (in trash)</td></tr>
+      <tr><td><kbd>,</kbd></td><td>settings</td></tr>
+    </table>
+  </div>
+</section>
+
+<section class="section reveal">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="chevron">&#10095;</span>
+      <h2 data-i18n="other.head">other apps</h2>
+    </div>
+    <div class="other-apps">
+      <a class="app-card" href="beanybox.html" style="text-decoration:none;">
+        <img class="app-card-icon" src="../assets/icons/beanybox.png" alt="BeanyBox icon">
+        <div class="app-card-name">Beany<span class="accentword">Box</span></div>
+        <p class="app-card-desc" data-i18n="card.beanybox.desc"></p>
+        <div class="app-card-cta"><span>BeanyBox</span><span data-i18n="card.cta.open">open</span></div>
+      </a>
+      <a class="app-card" href="questmaker.html" style="text-decoration:none;">
+        <img class="app-card-icon" src="../assets/icons/questmaker.png" alt="Beany's Quest Maker icon">
+        <div class="app-card-name">Beany's Quest<span class="accentword"> Maker</span></div>
+        <p class="app-card-desc" data-i18n="card.questmaker.desc"></p>
+        <div class="app-card-cta"><span>Quest Maker</span><span data-i18n="card.cta.open">open</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-links">
+      <a href="https://github.com/greenythebeany" target="_blank" rel="noopener"><span class="chevron">&#10095;</span> github.com/greenythebeany</a>
+      <a href="https://github.com/greenythebeany/BeanyDrive" target="_blank" rel="noopener" data-i18n="footer.source">source</a>
+    </div>
+    <div data-i18n="footer.tagline">no telemetry. no accounts you didn't ask for. just terminals.</div>
+  </div>
+</footer>
+
+<script src="../js/i18n.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

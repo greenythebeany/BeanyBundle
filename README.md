@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/icons/beanybundle.png" width="140" alt="BeanyBundle icon">
+  <img src="assets/icons/beanybundle-new.png" width="140" alt="BeanyBundle icon">
 </p>
 
 <h1 align="center">BeanyBundle</h1>

@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>BeanyBundle</title>
+<script type="text/javascript">
+  // GitHub Pages SPA redirect trick (https://github.com/rafgraph/spa-github-pages):
+  // GH Pages serves this for any unknown path (i.e. every client-side route on
+  // direct load/refresh). It re-encodes the path into a query string on the repo
+  // root, which index.html then decodes back before React Router mounts.
+  var pathSegmentsToKeep = 1;
+  var l = window.location;
+  l.replace(
+    l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+    l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+    l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+    (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+    l.hash
+  );
+</script>
+</head>
+<body></body>
+</html>

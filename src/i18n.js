@@ -1,4 +1,4 @@
-const I18N = {
+export const I18N = {
   en: {
     "boot.l1": "BeanyBundle OS v1.0.0",
     "boot.l2": "loading modules ",
@@ -134,16 +134,3 @@ const I18N = {
     "questmaker.f7": "Discord token uložený šifrovane, použitý iba na načítanie tvojho vlastného zoznamu questov"
   }
 };
-
-function applyI18n(lang) {
-  const dict = I18N[lang] || I18N.en;
-  document.querySelectorAll('[data-i18n]').forEach(el => {
-    const key = el.getAttribute('data-i18n');
-    if (dict[key] !== undefined) el.textContent = dict[key];
-  });
-  document.querySelectorAll('[data-i18n-html]').forEach(el => {
-    const key = el.getAttribute('data-i18n-html');
-    if (dict[key] !== undefined) el.innerHTML = dict[key];
-  });
-  document.documentElement.setAttribute('lang', lang);
-}

@@ -144,7 +144,7 @@ a { color: inherit; text-decoration: none; }
   justify-content: space-between;
 }
 .brand { display: flex; align-items: center; gap: 10px; font-size: 15px; }
-.brand-icon { height: 30px; width: 30px; image-rendering: pixelated; flex-shrink: 0; }
+.brand-icon { height: 44px; width: 44px; image-rendering: pixelated; flex-shrink: 0; }
 .brand .chevron { color: var(--accent); }
 .brand b { color: var(--text-bright); font-weight: 700; }
 .brand .accentword { color: var(--accent); font-weight: 700; }
